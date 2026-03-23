@@ -1,0 +1,9 @@
+{
+    "buildCommand": "pnpm install && pnpm --filter @miao-aiflow/workflow prisma generate && pnpm --filter @miao-aiflow/workflow build",
+    "installCommand": "pnpm install",
+    "framework": "nextjs",
+    "regions": ["hnd1"],
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
