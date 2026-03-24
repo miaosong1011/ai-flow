@@ -6,7 +6,6 @@
 
 import { PrismaPg } from '@prisma/adapter-pg'
 import { Pool } from 'pg'
-import { env } from 'prisma/config'
 
 import { PrismaClient } from '@/app/generated/prisma/client'
 
@@ -15,7 +14,7 @@ const globalForPrisma = globalThis as unknown as {
 }
 
 function createPrismaClient() {
-    const connectionString = env('DATABASE_URL') || 'postgresql://postgres:xiaoer@localhost:5433/postgres'
+    const connectionString = process.env.DATABASE_URL || 'postgresql://postgres:xiaoer@localhost:5433/postgres'
 
     const pool = new Pool({ connectionString })
     const adapter = new PrismaPg(pool as any)
