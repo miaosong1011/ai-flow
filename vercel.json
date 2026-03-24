@@ -1,5 +1,6 @@
 {
-    "buildCommand": "pnpm install && pnpm --filter @miao-aiflow/webapp prisma generate && pnpm --filter @miao-aiflow/workflow prisma generate && pnpm build",
+    "buildCommand": "pnpm install && pnpm prisma generate && pnpm build",
     "installCommand": "pnpm install",
-    "framework": "nextjs"
+    "framework": "nextjs",
+    "rootDirectory": "apps/workflow"
 }
