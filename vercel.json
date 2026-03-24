@@ -1,6 +1,0 @@
-{
-    "buildCommand": "pnpm install && pnpm prisma generate && pnpm build",
-    "installCommand": "pnpm install",
-    "framework": "nextjs",
-    "rootDirectory": "apps/workflow"
-}
