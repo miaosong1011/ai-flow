@@ -18,7 +18,7 @@ function createPrismaClient() {
     const connectionString = env('DATABASE_URL') || 'postgresql://postgres:xiaoer@localhost:5433/postgres'
 
     const pool = new Pool({ connectionString })
-    const adapter = new PrismaPg(pool)
+    const adapter = new PrismaPg(pool as any)
 
     return new PrismaClient({
         adapter,

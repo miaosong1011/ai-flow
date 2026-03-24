@@ -82,3 +82,16 @@ docker/qdrant_storage
 apps/workflow/app/generated
 apps/api-server/src/generated
 apps/webapp/app/generated
+
+# macOS
+._*
+.DS_Store
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# 包管理相关
+pnpm-lock.yaml
