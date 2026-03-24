@@ -4,16 +4,6 @@
     "description": "",
     "main": "index.js",
     "packageManager": "pnpm@10.0.0",
-    "pnpm": {
-        "onlyBuiltDependencies": [
-            "@nestjs/core",
-            "@prisma/engines",
-            "esbuild",
-            "prisma",
-            "sharp",
-            "unrs-resolver"
-        ]
-    },
     "scripts": {
         "build:watch": "turbo build:watch",
         "build": "turbo build",

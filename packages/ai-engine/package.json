@@ -27,7 +27,10 @@
         "@langchain/core": "^1.0.3",
         "@langchain/langgraph": "^1.0.0",
         "@langchain/ollama": "^1.0.0",
+        "@prisma/adapter-pg": "^5.22.0",
+        "@prisma/client": "^5.22.0",
         "@qdrant/js-client-rest": "^1.16.2",
+        "prisma": "^5.22.0",
         "zod": "^3.25.76"
     },
     "devDependencies": {
